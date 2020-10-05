@@ -29,7 +29,7 @@ describe "temperature conversion functions" do
     end
 
     it "converts boiling temperature" do
-      expect(ctof(100)).to eq(212)
+     expect(ctof(100)).to eq(212)
     end
 
     it "converts arbitrary temperature" do
@@ -37,6 +37,7 @@ describe "temperature conversion functions" do
     end
 
     it "converts body temperature" do
+      puts
       expect(ctof(37)).to be_within(0.1).of(98.6)
       # Why do we need to use be_within?
       # See http://www.ruby-forum.com/topic/169330
