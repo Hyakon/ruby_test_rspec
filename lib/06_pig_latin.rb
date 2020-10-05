@@ -6,6 +6,7 @@ def translate_one_word(str)
     res += str[0..consonant-1]
   end
   res += "ay"
+  res
 end
 
 def translate(str)
